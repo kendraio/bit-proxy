@@ -1,0 +1,13 @@
+{
+  "name": "kendraio-bit-proxy",
+  "version": 2,
+  "builds": [
+    { "src": "proxy.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/.*", "dest": "/proxy.js" }
+  ],
+  "env": {
+    "BIT_API_KEY": "@bit_api_key"
+  }
+}
